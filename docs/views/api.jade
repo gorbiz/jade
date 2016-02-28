@@ -51,6 +51,9 @@ block content
       dt globals:
       dd.type.array= 'Array.<string>'
       dd.description Add a list of global names to make accessible in templates
+      dt virtualFiles:
+      dd.type.function function
+      dd.description Consult function for #[code include] and #[code extends] before the filesystem, ex. #[code function(path) { return 'string of jade'; }]
     div }
 
   h3 jade.compile(source, options)

@@ -94,6 +94,7 @@ var html = jade.renderFile('filename.jade', merge(options, locals));
  - `filename`  Used in exceptions, and required when using includes
  - `compileDebug`  When `false` no debug instrumentation is compiled
  - `pretty`    Add pretty-indentation whitespace to output _(false by default)_
+ - `virtualFiles`  Consult function for `include` and `extends` before the filesystem, ex. `function(path) { return 'string of jade'; }`
 
 ## Browser Support
 
